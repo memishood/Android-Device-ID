@@ -1,1 +1,2 @@
-include ':example', ':getdeviceid'
+include ':library'
+include ':example'

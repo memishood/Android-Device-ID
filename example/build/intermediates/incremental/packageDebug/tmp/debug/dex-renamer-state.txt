@@ -1,0 +1,4 @@
+#Tue Jul 07 02:29:51 EET 2020
+base.0=C\:\\Users\\memisH\\Desktop\\getDeviceInfo\\example\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
