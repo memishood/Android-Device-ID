@@ -14,8 +14,7 @@ class MainActivity : AppCompatActivity() {
         if (imei != null) {
             // your code..
         }
-
-
+        
         val simSerialNumber = DeviceInfo.simSerialNumber(this)
 
         if (simSerialNumber != null) {
@@ -27,6 +26,6 @@ class MainActivity : AppCompatActivity() {
         if (secureId != null) {
             // your code..
         }
-
+        
     }
 }
