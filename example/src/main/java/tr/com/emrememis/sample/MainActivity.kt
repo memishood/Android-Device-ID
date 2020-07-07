@@ -11,21 +11,21 @@ class MainActivity : AppCompatActivity() {
 
         val imei = DeviceInfo.imei(this)
 
-        if (imei == null) {
-            // permissions are not granted or context is null
+        if (imei != null) {
+            // your code..
         }
 
 
         val simSerialNumber = DeviceInfo.simSerialNumber(this)
 
-        if (imei == null) {
-            // permissions are not granted or context is null
+        if (simSerialNumber != null) {
+            // your code..
         }
 
         val secureId = DeviceInfo.secureId(this)
 
-        if (secureId == null) {
-            // context is null
+        if (secureId != null) {
+            // your code..
         }
 
     }
