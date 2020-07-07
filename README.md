@@ -37,7 +37,7 @@ dependencies {
 ```
 
 ### Kotlin
-
+remember to check READ_PHONE_STATE permission before using 
 ```
 val imei = DeviceInfo.imei(this)
 
