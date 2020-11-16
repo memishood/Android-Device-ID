@@ -5,6 +5,7 @@ plugins {
     id 'com.github.dcendents.android-maven'
 }
 group='com.github.memishood'
+version="1.0.4"
 
 android {
     compileSdkVersion 30
@@ -13,8 +14,8 @@ android {
     defaultConfig {
         minSdkVersion 15
         targetSdkVersion 30
-        versionCode 3
-        versionName "1.0.3"
+        versionCode 4
+        versionName "1.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
