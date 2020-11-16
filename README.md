@@ -15,7 +15,7 @@
 #### 2.Add this dependency in your app level `build.gradle`:
     dependencies {
         ...
-        def latestVersion = "1.0.4"
+        def latestVersion = "1.0.5"
         implementation "com.github.memishood:Android-Device-ID:$latestVersion"
     }
 
