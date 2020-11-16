@@ -15,7 +15,7 @@
 #### 2.Add this dependency in your app level `build.gradle`:
     dependencies {
         ...
-        def latestVersion = "1.0.1"
+        def latestVersion = "1.0.3"
         implementation "com.github.memishood:Android-Device-ID:$latestVersion"
     }
 
@@ -39,15 +39,17 @@
 ### Kotlin
 Remember to check READ_PHONE_STATE permission before using 
 ```kotlin
-DeviceInfo.imei(this)?.let { imei -> 
+val deviceInfo = DeviceInfo(this)
+
+deviceInfo.imei?.let { imei ->
+    // your code..
+}
+        
+deviceInfo.simSerialNumber?.let { simSerialNumber ->
     // your code..
 }
 
-DeviceInfo.simSerialNumber(this)?.let { simSerialNumber -> 
-    // your code..
-}
-
-DeviceInfo.secureId(this)?.let { secureId -> 
+deviceInfo.secureId?.let { secureId ->
     // your code..
 }
 ```
