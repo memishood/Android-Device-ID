@@ -5,27 +5,22 @@ import androidx.appcompat.app.AppCompatActivity
 import tr.com.emrememis.device.info.library.DeviceInfo
 
 class MainActivity : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val deviceInfo = DeviceInfo(this)
 
-        val imei = DeviceInfo.imei(this)
-
-        if (imei != null) {
+        deviceInfo.imei?.let { imei ->
             // your code..
         }
         
-        val simSerialNumber = DeviceInfo.simSerialNumber(this)
-
-        if (simSerialNumber != null) {
+        deviceInfo.simSerialNumber?.let { simSerialNumber ->
             // your code..
         }
 
-        val secureId = DeviceInfo.secureId(this)
-
-        if (secureId != null) {
+        deviceInfo.secureId?.let { secureId ->
             // your code..
         }
-        
     }
 }
